@@ -14,6 +14,9 @@ html,body{
     width: 100%;
 
 }
+.video-list-item{
+    padding: 10px;
+}
 .video-list-item:hover{
     cursor: pointer;
     background: #ddd;
@@ -22,6 +25,11 @@ html,body{
 .video-list{
     height:10; 
     padding:0;
-    overflow: auto; 
+    overflow: auto;
 }
-
+.video-detail {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

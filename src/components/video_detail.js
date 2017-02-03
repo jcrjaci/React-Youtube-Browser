@@ -4,9 +4,9 @@ export default class App extends Component {
 
   render() {
     if (!this.props.video) {
-      return  <div>Loading...</div>;
+      return <div>Loading...</div>;
     }
-    
+
     const videoId = this.props.video.id.videoId;
     const url = `https://www.youtube.com/embed/${videoId}`;
     return (
@@ -14,8 +14,10 @@ export default class App extends Component {
         <div className="embed-responsive embed-responsive-16by9">
           <iframe className="embed-responsive-item" src={url} />
         </div>
-        <div className="text-left">{this.props.video.snippet.title}</div>
-        <div className="text-center">{this.props.video.snippet.description}</div>
+        <div className="video-detail">
+          <div className="text-left">{this.props.video.snippet.title}</div>
+          <div className="text-center">{this.props.video.snippet.description}</div>
+        </div>
       </div>
     );
   }

@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 export default class VideoListItem extends Component {
   render() {
     return (
-      <li className="video-list-item media" onClick={(video) => this.props.videoClick(this.props.video)}>
+      <li className="video-list-item video-detail media" onClick={(video) => this.props.videoClick(this.props.video)}>
+        <div className="media-left">
         <image className="d-flex mr-3" src={this.props.video.snippet.thumbnails.default.url} />
+        </div>
         <div className="media-body">
-          <h5 className="mt-0 mb-1">
+           <div className="media-heading">
             {this.props.video.snippet.title}
-          </h5>
-          {this.props.video.snippet.description}
+          </div>
         </div>
       </li>
     );
