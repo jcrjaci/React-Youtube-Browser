@@ -16,7 +16,7 @@ export default class App extends Component {
       videos: [],
       selectedVideo: null
     }
-    this.videoSearch('ronaldo')
+    this.videoSearch('')
   }
 
   videoSearch(term) {
