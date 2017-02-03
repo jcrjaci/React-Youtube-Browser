@@ -11,11 +11,11 @@ export default class App extends Component {
     const url = `https://www.youtube.com/embed/${videoId}`;
     return (
       <div>
-        <div>
-          <iframe src={url} />
+        <div className="embed-responsive embed-responsive-16by9">
+          <iframe className="embed-responsive-item" src={url} />
         </div>
-        <div>{this.props.video.snippet.title}</div>
-        <div>{this.props.video.snippet.description}</div>
+        <div className="text-left">{this.props.video.snippet.title}</div>
+        <div className="text-center">{this.props.video.snippet.description}</div>
       </div>
     );
   }

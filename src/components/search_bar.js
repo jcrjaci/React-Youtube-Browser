@@ -15,10 +15,14 @@ export default class SearchBar extends Component {
   render() {
     return (
       <div className="search-bar">
-        <input
-          value={this.state.term}
-          onChange={event => this.onInputChange(event.target.value)} />
-      </div>
+
+          <input
+            type="text"
+            className="search-query form-control"
+            placeholder="Search"
+            value={this.state.term}
+            onChange={event => this.onInputChange(event.target.value)} />
+        </div>
     );
   }
 }

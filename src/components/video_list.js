@@ -9,7 +9,7 @@ export default class VideoList extends Component {
       return null;
     }
     return (
-      <div >
+      <ul class="list-unstyled">
       {this.props.videos.map(
         (video) =>{
           return (
@@ -21,7 +21,7 @@ export default class VideoList extends Component {
           );
         }
       )}
-      </div>
+      </ul>
     );
   }
 }
