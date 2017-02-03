@@ -1,0 +1,35 @@
+html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+.search-bar {
+    width: 80%;
+    margin: 20px auto
+}
+#navbar {
+    background: #ddd;
+    width: 100%;
+
+}
+.video-list-item{
+    padding: 10px;
+}
+.video-list-item:hover{
+    cursor: pointer;
+    background: #ddd;
+}
+
+.video-list{
+    height:10; 
+    padding:0;
+    overflow: auto;
+}
+.video-detail {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
